@@ -1,1 +1,2 @@
 # pythonProject
+selectors css CapitalCom
