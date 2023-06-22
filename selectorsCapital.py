@@ -3,7 +3,7 @@
 class MenuUS11TradingStrategiesGuide:
     
     SUB_MENU_EN_TRADING_STRATEGIES_GUIDE = (By.CSS_SELECTOR,
-                                        "div .grid > a[href='https://capital.com/trading-strategies-guide']")
+                                            "div .grid > a[href='https://capital.com/trading-strategies-guide']")
     SUB_MENU_AR_TRADING_STRATEGIES_GUIDE = (By.CSS_SELECTOR,
                                             "div .grid > a[href='https://capital.com/ar/trading-strategies-guide']")
     SUB_MENU_BG_TRADING_STRATEGIES_GUIDE = (By.CSS_SELECTOR,
