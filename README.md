@@ -1,2 +1,2 @@
-# pythonProject
+pythonProject
 selectors css CapitalCom
