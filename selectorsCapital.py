@@ -1,5 +1,3 @@
-
-
 class MenuUS11TradingPsychologyGuide:
 SUB_MENU_ALL_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/trading-psychology-guide']")
 SUB_MENU_AR_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/ar']")
