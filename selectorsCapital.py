@@ -1,4 +1,4 @@
-.cc-header a[href$='/trading-psychology-guide']
+# .cc-header a[href$='/trading-psychology-guide']
 
 
 class MenuUS11TradingStrategiesGuide:
