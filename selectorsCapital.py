@@ -1,5 +1,11 @@
 div.alphabet-list-container > div > div > span.alphabet-list-item # ПРИМЕР ИЗГЛОССАРИЯ
 
+
+САМАЯ ОБЩАЯ ССЫЛКА ДЛА СТРАНИЦЫ Trading_Psychology_Guide:
+div.markets-list > div.item a.h3
+
+
+
 div.markets-list > div.item a[href$='/overconfidence-bias']  #то же самое что и вторая ссылка
 
 https://capital.com/hindsight-bias
