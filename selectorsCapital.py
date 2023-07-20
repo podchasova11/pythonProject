@@ -1,3 +1,25 @@
+div.markets-list > div.item a[href$='/overconfidence-bias']
+div.item a[href$='/overconfidence-bias'] #то же самое что и первая ссылка
+div.item a[href$='/familiarity-bias']
+div.item a[href$='/disposition-effect']
+
+div.item a[href$='/loss-aversion-bias-explained']
+div.item a[href$='/anchoring-bias']
+div.item a[href$='/herd-bias']
+div.item a[href$='/negativity-bias']
+div.item a[href$='/hot-hand-fallacy-bias']
+div.item a[href$='/gamblers-fallacy-bias']
+div.item a[href$='/confirmation-bias']
+div.item a[href$='/self-attribution-bias']
+div.item a[href$='/recency-bias']
+
+
+div.item a[href$='/emotions-in-trading']
+div.item a[href$='/endowment-effect']
+div.item a[href$='/fear-and-greed-index']
+div.item a[href$='/survivorship-bias']
+
+
 class MenuUS11TradingPsychologyGuide:
 SUB_MENU_ALL_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/trading-psychology-guide']")
 SUB_MENU_AR_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/ar']")
