@@ -1,8 +1,8 @@
-div.markets-list > div.item a[href$='/overconfidence-bias']
-div.item a[href$='/overconfidence-bias'] #то же самое что и первая ссылка
-div.item a[href$='/familiarity-bias']
-div.item a[href$='/disposition-effect']
+div.markets-list > div.item a[href$='/overconfidence-bias']  #то же самое что и вторая ссылка
 
+
+div.item a[href$='/overconfidence-bias']
+div.item a[href$='/disposition-effect']
 div.item a[href$='/loss-aversion-bias-explained']
 div.item a[href$='/anchoring-bias']
 div.item a[href$='/herd-bias']
@@ -11,8 +11,8 @@ div.item a[href$='/hot-hand-fallacy-bias']
 div.item a[href$='/gamblers-fallacy-bias']
 div.item a[href$='/confirmation-bias']
 div.item a[href$='/self-attribution-bias']
+div.item a[href$='/hindsight-bias']
 div.item a[href$='/recency-bias']
-
 
 div.item a[href$='/emotions-in-trading']
 div.item a[href$='/endowment-effect']
