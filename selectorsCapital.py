@@ -1,5 +1,21 @@
 # .cc-header a[href$='/trading-psychology-guide']
+class MenuUS11TradingPsychologyGuide:
+    SUB_MENU_ALL_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/trading-psychology-guide']")
+    SUB_MENU_ALL_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/trading-psychology-guide']")
+    SUB_MENU_ALL_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/trading-psychology-guide']")
+    SUB_MENU_ALL_TRADING_PSYCHOLOGY_GUIDE = (By.CSS_SELECTOR, ".cc-header a[href$='/trading-psychology-guide']")
 
+class MenuUS11DayTrading:
+    SUB_MENU_ALL_DAY_TRADING = (By.CSS_SELECTOR, ".cc-header a[href$='/day-trading']")
+    SUB_MENU_DE_DAY_TRADING = (By.CSS_SELECTOR, ".cc-header a[href='https://capital.com/de/daytrading']")
+    SUB_MENU_ES_DAY_TRADING = (By.CSS_SELECTOR, ".cc-header a[href='https://capital.com/es/trading-diario']")
+
+
+class MenuUS11IndicesTrading:
+    SUB_MENU_ALL_INDICES_TRADING = (By.CSS_SELECTOR, ".cc-header a[href$='/trade-indices']")
+    SUB_MENU_ID_INDICES_TRADING = (By.CSS_SELECTOR, ".cc-header a[href$='/id/panduan-perdagangan-indeks']")
+    SUB_MENU_DE_INDICES_TRADING = (By.CSS_SELECTOR, ".cc-header a[href$='/de/indizeshandel']")
+    SUB_MENU_RU_INDICES_TRADING = (By.CSS_SELECTOR, ".cc-header a[href$='/ru/torgovlya-indeksami-cfd']")
 
 class MenuUS11TradingStrategiesGuide:
     
