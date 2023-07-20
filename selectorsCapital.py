@@ -1,7 +1,7 @@
 div.alphabet-list-container > div > div > span.alphabet-list-item # ПРИМЕР ИЗГЛОССАРИЯ
 
 
-САМАЯ ОБЩАЯ ССЫЛКА ДЛА СТРАНИЦЫ Trading_Psychology_Guide:
+#САМАЯ ОБЩАЯ ССЫЛКА ДЛА СТРАНИЦЫ Trading_Psychology_Guide:
 div.markets-list > div.item a.h3
 
 
