@@ -173,14 +173,54 @@ def sub_menu_indices_trading_move_focus_click(self, d, test_language):
 @allure.step(f"{datetime.now()}.   Click 'Trading Psychology Guide' hyperlink.")
 def sub_menu_trading_psychology_guide_move_focus_click(self, d, test_language):
         match test_language:
-    case "id":
-        menu = d.find_elements(*MenuUS11IndicesTrading.SUB_MENU_ID_INDICES_TRADING)
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
     case "de":
-        menu = d.find_elements(*MenuUS11IndicesTrading.SUB_MENU_DE_INDICES_TRADING)
-    case "ru":
-        menu = d.find_elements(*MenuUS11IndicesTrading.SUB_MENU_RU_INDICES_TRADING)
-    case _:
-        menu = d.find_elements(*MenuUS11IndicesTrading.SUB_MENU_ALL_INDICES_TRADING)
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
+  case "de":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_DE_INDICES_TRADING)
+  case "ru":
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_RU_INDICES_TRADING)
+  case _:
+      menu = d.find_elements(*MenuUS11TradingPsychologyGuide.SUB_MENU_ALL_INDICES_TRADING)
 
 if len(menu) > 0:
     ActionChains(d) \
