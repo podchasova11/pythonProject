@@ -1,5 +1,6 @@
 div.markets-list > div.item a[href$='/overconfidence-bias']  #то же самое что и вторая ссылка
 
+https://capital.com/hindsight-bias
 
 div.item a[href$='/overconfidence-bias']
 div.item a[href$='/disposition-effect']
