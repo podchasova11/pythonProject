@@ -22,7 +22,6 @@ div.item a[href$='/confirmation-bias']
 div.item a[href$='/self-attribution-bias']
 div.item a[href$='/hindsight-bias']
 div.item a[href$='/recency-bias']
-
 div.item a[href$='/emotions-in-trading']
 div.item a[href$='/endowment-effect']
 div.item a[href$='/fear-and-greed-index']
