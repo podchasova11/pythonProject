@@ -275,6 +275,8 @@ BUTTON_START_TRADING_IN_ARTICLE     находится в C:\Users\Mila\PycharmP
 ###  2 LOCATORS Button [START TRADING]: Вложенных страниц                                             
 нашел AnVirus: в проекте Capital
 ul > li:nth-child(1) > a.js_signup
+
+
 нашла те же локаторы я:
 1) #c42 > ul.list-row.js-analyticsVisible > li:nth-child(1) > a
 2) ul.list-row >li:nth-child(1) > a
