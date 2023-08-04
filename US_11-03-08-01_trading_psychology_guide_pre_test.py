@@ -69,5 +69,10 @@ class TestTradingPsychologyGuidePretest:
             del file
 
         print(f"{datetime.now()}   Test data include {count_out} item(s)")
-        print(f"{datetime.now()}   The test coverage = {count_out/count_in*100} %")
+        if count_in != 0:
+            print(f"{datetime.now()}   The test coverage = {count_out/count_in*100} %")
+        else:
+            print(f"{datetime.now()}   The test coverage = 0 %")
+
         count -= 1
+
