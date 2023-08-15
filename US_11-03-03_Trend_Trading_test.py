@@ -174,3 +174,5 @@ def test_04_button_try_demo_main_banner(
             case "Auth":
                 test_element.assert_trading_platform_v2(d, link, demo=True)    
 
+
+
