@@ -19,19 +19,24 @@ from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
 from src.src import CapitalComPageSrc
 
 
+@pytest.fixture()
+def cur_time():
+    return str(datetime.now())
+    
 @pytest.mark.us_11_03_03
 class TestTrendTrading:
+    
     page_conditions = None
 
-    @allure.step("Start test of button [Log in] in the Header")
+    @allure.step("Start test_11_03_03 of button [Log in] in the Header")
     def test_01_header_button_login(
             self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password,
-            prob_run_tc):
+            prob_run_tc, cur_time):
         """
         Check: Button [Log In]
         Language: All. License: All.
         """
-        print(f"\n\n{datetime.now()}   Работает obj {self} с именем TC_11.03.03_01")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.03_01")
 
         link = build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
                                     "11.03.03", "Education > Menu item [Trend Trading]",
@@ -52,16 +57,22 @@ class TestTrendTrading:
             pytest.fail("Testing element is not clicked")
 
         test_element = AssertClass(d, link)
-        test_element.assert_login(d, cur_language, link)
+        match cur_role:
+            case "NoReg":
+                test_element.assert_signup(d, cur_language, link)
+            case "Reg/NoAuth":
+                test_element.assert_login(d, cur_language, link)
+            case "Auth":
+                test_element.assert_trading_platform_v2(d, link)
 
     @allure.step("Start test of button [Sign up] in the Header")
     def test_02_header_button_signup(
-            self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, prob_run_tc):
+            self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, prob_run_tc, cur_time):
         """
         Check: Button [Sign up]
         Language: All. License: All.
         """
-        print(f"\n\n{datetime.now()}  Работает obj {self} с именем TC_11.03.03_02")
+        print(f"\n{datetime.now()}  Работает obj {self} с именем TC_11.03.03_02")
 
         link = build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
                                     "11.03.03", "Education > Menu item [Trend Trading]",
@@ -82,25 +93,31 @@ class TestTrendTrading:
             pytest.fail("Testing element is not clicked")
 
         test_element = AssertClass(d, link)
-        test_element.assert_signup(d, cur_language, link)
+        match cur_role:
+            case "NoReg":
+                test_element.assert_signup(d, cur_language, link)
+            case "Reg/NoAuth":
+                test_element.assert_login(d, cur_language, link)
+            case "Auth":
+                test_element.assert_trading_platform_v2(d, link)
 
-    @allure.step("Start test of button [Start Trading] on the Main banner 'What is trend trading?'")
+    @allure.step("Start test of button [Start Trading] on the Main banner")
     def test_03_button_start_trading_main_banner(
             self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, prob_run_tc):
         """
         Check: Button [Start Trading]
         Language: All. License: All.
         """
-        print(f"\n\n{datetime.now()}  Работает obj {self} с именем TC_11.03.03_03")
+        print(f"\n{datetime.now()}  Работает obj {self} с именем TC_11.03.03_03")
 
-        link = build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
+        build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
                                     "11.03.03",
                                     "Education > Menu item [Trend Trading]",
-                                    "02",
+                                    "03",
                                     "Testing button [Start Trading] in the Main banner 'What is trend trading?'")
 
         page_conditions = Conditions(d, "")
-        page_conditions.preconditions(
+        link = page_conditions.preconditions(
             d, CapitalComPageSrc.URL, "", cur_language, cur_country, cur_role, cur_login, cur_password)
 
         page_menu = MenuSection(d, link)
@@ -121,3 +138,11 @@ class TestTrendTrading:
                 test_element.assert_login(d, cur_language, link)
             case "Auth":
                 test_element.assert_trading_platform_v2(d, link)
+
+@allure.step("Start test of button [Try demo] on Main banner")
+def test_04_button_try_demo_main_banner(
+    self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, prob_run_tc):
+        Check: Button [Try demo] on Main banner
+        Language: All. License: All.
+        """
+
