@@ -1,21 +1,13 @@
 """
 -*- coding: utf-8 -*-
-@Time    : 2023/05/26 00:40
-@Author  : Alexander Tomelo
+@Time    : 2023/00/00
+@Author  :
 """
 import allure
 import pytest
-# import time
-# import os
-# import sys
-# import psutil
-# import subprocess
-# from memory_profiler import profile
 from datetime import datetime
 from tests.build_dynamic_arg import build_dynamic_arg_v2
 from pages.conditions import Conditions
-# from pages.Elements.HeaderButtonLogin import HeaderButtonLogin
-# from pages.Elements.HeaderButtonTrade import HeaderButtonTrade
 from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
 from pages.Elements.ButtonTryDemoMainBanner import MainBannerTryDemo
 from pages.Elements.ButtonStartTradingInArticle import ArticleStartTrading
@@ -25,7 +17,6 @@ from pages.Elements.ButtonTradeOnWidgetMostTraded import ButtonTradeOnWidgetMost
 from pages.Elements.testing_elements_locators import ButtonTradeOnWidgetMostTradedLocators
 from pages.Elements.BlockStepTrading import BlockStepTrading
 from pages.Elements.ButtonGetStartedOnStickyBar import GetStartedOnStickyBar
-# from pages.Elements.ButtonFreeDemoOnHorizontalBanner import ButtonFreeDemoOnHorizontalBanner
 from pages.Elements.AssertClass import AssertClass
 from src.src import CapitalComPageSrc
 
@@ -35,7 +26,7 @@ def pytest_generate_tests(metafunc):
     Fixture generation test data
     """
     if "cur_item_link" in metafunc.fixturenames:
-        file_name = "tests/US_11_Education/US_11-02-04_Forex_trading/list_of_href.txt"
+        file_name = "tests/US_11_Education/US_11-02-04_Shares_trading/list_of_href.txt"
 
         list_item_link = list()
         try:
@@ -53,8 +44,8 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize("cur_item_link", list_item_link, scope="class")
 
 
-@pytest.mark.us_11_02_04
-class TestForexTrading:
+@pytest.mark.us_11_02_02
+class TestSharesTrading:
     page_conditions = None
 
     @allure.step("Start test of button [Start trading] on Main banner")
@@ -65,10 +56,10 @@ class TestForexTrading:
         Check: Button [Start Trading] on Main banner
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.02.04_01")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.02.02_01")
 
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.02.04", "Educations > Menu item [Forex trading]",
+                             "11.02.02", "Educations > Menu item [Shares trading]",
                              "01", "Testing button [Start Trading] on Main banner")
 
         page_conditions = Conditions(d, "")
@@ -97,9 +88,9 @@ class TestForexTrading:
         Check: Button [Try demo] on Main banner
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.02.04_02")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.02.02_02")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.02.04", "Educations > Menu item [Forex trading]",
+                             "11.02.02", "Educations > Menu item [Shares trading]",
                              "02", "Testing button [Try demo] on Main banner")
 
         page_conditions = Conditions(d, "")
