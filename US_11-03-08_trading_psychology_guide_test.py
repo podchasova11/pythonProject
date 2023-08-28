@@ -53,3 +53,40 @@ class TestTradingPsychologyGuide:
                 test_element.assert_signup(d, cur_language, link)
             case "Auth":
                 test_element.assert_trading_platform_v2(d, link)
+
+    
+    @allure.step("Start test_11.03.08_03 Click buttons [Trade] in Widget Most traded block")
+    def test_03_most_traded_trade_button(
+            self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, cur_item_link,
+            prob_run_tc):
+        """
+        Check: Button [Trade] in Most traded block
+        Language: All. License: All.
+        """
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_03")
+        build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
+                             "11.03.08", "Educations > Menu item [Trading Psychology Guide]",
+                             "03", "Testing button [Trade] in Most traded block")
+
+        if cur_country == "gb":
+            pytest.skip("This test-case not for FCA licence")
+
+        page_conditions = Conditions(d, "")
+        page_conditions.preconditions(
+            d, CapitalComPageSrc.URL, "", cur_language, cur_country, cur_role, cur_login, cur_password)
+
+        test_element = ButtonTradeOnWidgetMostTraded(d, cur_item_link)
+        test_elements_list = test_element.arrange_v2_()
+        for index, element in enumerate(test_elements_list):
+            print(f"\n{datetime.now()}   Testing element #{index + 1}")
+            if not test_element.element_click_v2(element):
+                pytest.fail("Testing element is not clicked")
+            check_element = AssertClass(d, cur_item_link)
+            match cur_role:
+                case "NoReg":
+                    check_element.assert_signup(d, cur_language, cur_item_link)
+                case "Reg/NoAuth":
+                    check_element.assert_login(d, cur_language, cur_item_link)
+                case "Auth":
+                    check_element.assert_trading_platform_v2(d, cur_item_link)
+
