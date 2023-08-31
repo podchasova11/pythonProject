@@ -1,0 +1,8 @@
+#  Периметр треугольника
+a = float(input())
+b = float(input())
+d = float(input())
+perimetr = a + b + d
+println(perimetr)
+
+
