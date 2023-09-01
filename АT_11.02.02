@@ -15,7 +15,6 @@ from src.src import CapitalComPageSrc
 
 count = 1
 
-
 class TestSharesTradingPretest:
 
     page_conditions = None
@@ -75,6 +74,8 @@ class TestSharesTradingPretest:
         else:
             print(f"{datetime.now()}   The test coverage = 0 %")
         count -= 1
+
+
 
 class TestSharesTradingPretest:
 
