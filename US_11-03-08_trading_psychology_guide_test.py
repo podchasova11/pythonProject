@@ -104,6 +104,8 @@ class TestTradingPsychologyGuide:
                                     "11.03.08", "Education > Menu Item [Trading Psychology Guide]",
                                     "04", "Testing button [Create_verify_your_account] in block [Steps trading]")
 
+        if cur_language not in [""]:
+        pytest.skip(f"Test-case not for '{cur_language}' language")            
 
         page_conditions = Conditions(d, "")
         link = page_conditions.preconditions(
