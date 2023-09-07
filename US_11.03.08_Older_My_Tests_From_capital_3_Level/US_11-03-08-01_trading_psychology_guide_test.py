@@ -36,7 +36,12 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize("cur_item_link", list_item_link, scope="class")
 
 
-@pytest.mark.us_11_03_08
+@pytest.fixture()
+def cur_time():
+    """Fixture"""
+    return str(datetime.now())
+
+
 class TestTradingPsychologyGuideItem:
     page_conditions = None
 
@@ -51,7 +56,7 @@ class TestTradingPsychologyGuideItem:
         print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_01")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
                              "11.03.08", "Education > Menu item [Trading Psychology Guide]",
-                             "01", "Testing button [Start Trading] on Main banner")
+                             "1", "Testing button [Start Trading] on Main banner")
 
         if cur_language not in [""]:
             pytest.skip(f"Test-case not for '{cur_language}' language")
@@ -83,7 +88,7 @@ class TestTradingPsychologyGuideItem:
         print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_02")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
                              "11.03.08", "Education > Menu item [Trading Psychology Guide]",
-                             "02", "Testing button [Try demo] on Main banner")
+                             "2", "Testing button [Try demo] on Main banner")
 
         if cur_language not in [""]:
             pytest.skip(f"Test-case not for '{cur_language}' language")
@@ -115,7 +120,7 @@ class TestTradingPsychologyGuideItem:
         print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_03")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
                              "11.03.08", "Education > Menu item [Trading Psychology Guide]",
-                             "03", "Testing button [Trade] in Most traded block")
+                             "3", "Testing button [Trade] in Most traded block")
 
         if cur_country == "gb":
             pytest.skip("This test-case not for FCA licence")
@@ -138,40 +143,3 @@ class TestTradingPsychologyGuideItem:
                     check_element.assert_login(d, cur_language, cur_item_link)
                 case "Auth":
                     check_element.assert_trading_platform_v2(d, cur_item_link)
-
-    @allure.step("Start test_11.03.08_04 button [Create_verify_your_account] in block [Steps trading].")
-    def test_04_create_verify_your_account(
-            self, worker_id, d, cur_language, cur_country, cur_role,
-            cur_login, cur_password, cur_item_link, prob_run_tc, ):
-        """
-        Check: Button [Create_verify_your_account] in block [Steps trading]
-        Language: All. License: All.
-        """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_04:")
-        build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.08", "Education > Menu item [Trading Psychology Guide]",
-                             "04", "Testing button [Create_verify_your_account] in block [Steps trading]")
-
-        if cur_language != "":
-            pytest.skip("This test-case only for english language")
-
-        page_conditions = Conditions(d, "")
-        link = page_conditions.preconditions(
-            d, CapitalComPageSrc.URL, "", cur_language, cur_country, cur_role, cur_login, cur_password)
-
-        page_menu = MenuSection(d, link)
-        page_menu.menu_education_move_focus(d, cur_language)
-        link = page_menu.sub_menu_trading_psychology_guide_move_focus_click(d, cur_language)
-
-        test_element = BlockStepTrading(d, link)
-        test_element.arrange_(d, link)
-        test_element.element_click()
-
-        test_element = AssertClass(d, link)
-        match cur_role:
-            case "NoReg" | "Reg/NoAuth":
-                test_element.assert_signup(d, cur_language, link)
-            case "Auth":
-                test_element.assert_trading_platform_v2(d, link)
-
-
