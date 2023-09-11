@@ -174,4 +174,40 @@ class TestTradingPsychologyGuideItem:
             case "Auth":
                 test_element.assert_trading_platform_v2(d, link)
 
+    # @allure.step("Start test of button [Practise for free] in content block")    НОВЫЙ ТЕСТ 11/09/23
+    # def test_05(
+    #         self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, prob_run_tc):
+    #     """
+    #     Check: Button [Practise for free] in content block
+    #     Language: All. License: All.
+    #     """
+    #     print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_05")
+    #     build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
+    #                          "11.03.08",
+    #                          "Educations > Menu item [Trading Psychology Guide]",
+    #                          "05",
+    #                          "Testing button [Practise for free] in Content block")
+
+    #     if cur_language not in [""]:
+    #         pytest.skip(f"This test not for {cur_language} language")
+    #     if cur_country == 'gb':
+    #         pytest.skip("This test is not supported on UK location")
+
+    #     menu_link = self.us_link.get_us_link(d, cur_language, cur_country, cur_role, cur_login, cur_password)
+
+    #     test_element = ButtonPractiseForFreeInContentBlock(d, menu_link)
+    #     test_element.arrange_(menu_link)
+
+    #     if not test_element.element_click():
+    #         pytest.fail("Testing element is not clicked")
+
+    #     test_element = AssertClass(d, menu_link)
+    #     match cur_role:
+    #         case "NoReg":
+    #             test_element.assert_signup(d, cur_language, menu_link)
+    #         case "Reg/NoAuth":
+    #             test_element.assert_login(d, cur_language, menu_link)
+    #         case "Auth":
+    #             test_element.assert_trading_platform_v2(d, menu_link)
+
 
