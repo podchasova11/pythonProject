@@ -38,8 +38,8 @@ else:
 #   - Если `not is_raining` - выведите сообщение "У нас солнечная погода!".
 
 
-is_raining = False
-is_sunny = False
+is_raining = True
+is_sunny = True
 if is_raining is True and is_sunny is False:
     print("Whether is bad")
 else:
@@ -47,7 +47,7 @@ else:
 
 if is_raining and is_sunny:
     print("Двойка вариантов, проверьте погоду!")
-if is_raining or is_sunny:
+elif is_raining or is_sunny:
     print("У нас хорошая погода!")
-if not is_raining:
+elif not is_raining:
     print("У нас солнечная погода!")
