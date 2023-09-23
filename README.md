@@ -60,7 +60,6 @@
 * [Pigs in a Pen](Authored/Square.py) - [CodeWars](https://www.codewars.com/kata/58fdcc51b4f81a0b1e00003e)
 * [Hungry Hippos](Authored/Hippo.py) - [CodeWars](https://www.codewars.com/kata/590300eb378a9282ba000095)
 * [Plenty of Fish in the Pond](Authored/Fish.py) - [CodeWars](https://www.codewars.com/kata/5904be220881cb68be00007d)
-* [Fruit Machine](Authored/Fruit.py) - [CodeWars](https://www.codewars.com/kata/590adadea658017d90000039)
-* CodeWars](https://www.codewars.com/kata/591eab1d192fe0435e000014)
+* [Fruit Machine](Authored/Fruit.py) - [CodeWars](https://www.codewars.com/591eab1d192fe0435e000014)
 
 
