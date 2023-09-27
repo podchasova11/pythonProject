@@ -362,3 +362,4 @@ EDUCATION -> Trading_psychology_guide_locators.py
                 test_element.assert_trading_platform_v2(d, link)
 
 
+
