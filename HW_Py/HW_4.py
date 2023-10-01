@@ -1,10 +1,33 @@
 # 4.1. Напишите функцию square, принимающую 1 аргумент — сторону квадрата, и возвращающую 3 значения (с помощью кортежа):
 #      периметр квадрата, площадь квадрата и диагональ квадрата.
 
+
+# ### Sort a Word (alphabet increasing ) using loop.
+alpf = ["a","d","h"]
+for let in range(len(alpf)): # сколько элементов в списке столько раз выполнится цикл
+    print(let)
+for let in alpf:
+    print(let)
+
+
 def pattern(char1=2, char2=2):
+
     return (char1 + char2) * 2
 
 print(pattern)
+#
+
+lists = []
+
+# заполните его числами от 0 до 100 (range в помощь).
+for element in range(0, 101, 20):
+
+    lists.append(element)
+    print(f"Print {lists}")
+for element in lists:
+    print(f"Print {element}")
+    print(lists)
+
 
 
 # 4.2. Напишите фукнцию, которая принимает произвольное количество именнованных аргументов и выводит их построчно
@@ -22,7 +45,7 @@ person = {
 }
 print(person.items())
 for key, value in person.items():
-    print(key, value)
+    print(f" {key} :  {value}")
 
 # 4.3. Используя лямбда-выражение, из списка my_list = [20, -3, 15, 2, -1, -21] создайте новый список, содержащий только
 #      положительные числа

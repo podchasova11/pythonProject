@@ -13,7 +13,7 @@ for element in range(0, 101, 20):
     print(f"Print {lists}")
 for element in lists:
     print(f"Print {element}")
-    print(lists)
+
 
 
 # Задание 2:
