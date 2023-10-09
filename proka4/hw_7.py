@@ -1,18 +1,37 @@
 # Домашнее задание  7
 # Домашнее задание на тему "Циклы"
-#
+fruits = ["apple", "banana", "pich"]
+for fruit in fruits:
+    print(fruit)
 # Задание 1:
 # Создайте пустой список и с помощью цикла 'for'
-
-lists = []
-
 # заполните его числами от 0 до 100 (range в помощь).
-for element in range(0, 101, 20):
+# range(start, stop, step)
+lists = []
+for lists in range(0, 101, 20):
+    print(lists)
 
-    lists.append(element)
-    print(f"Print {lists}")
-for element in lists:
-    print(f"Print {element}")
+message = "Hey, Im gonna go to work tommorow"
+for letter in message:
+    print(letter.upper())
+    if letter == "g":
+        print("KKKKKKKKKKKKKKKK")
+
+
+person = {
+    "name" : "Alexey",
+     "age" : 25
+}
+print(person.items())
+for k, v in person.items():
+    print(k, v)
+
+# for element in range(0, 101, 2):
+#
+#     lists.append(element)
+#     print(f"Print {lists}")
+# for element in lists:
+#     print(f"Print {element}")
 
 
 

@@ -1,0 +1,54 @@
+./CodewarsHW/HW_1.py:#  city, and state to welcome a person.
+./HW_Py/HW_4.py:person = {
+./HW_Py/HW_4.py:print(person.items())
+./HW_Py/HW_4.py:for key, value in person.items():
+./HW_Py/HW_4.py:def persons(age, last_name='Smith', name='Anna'):
+./HW_Py/HW_4.py:print(persons(name='Alce', age=30))
+./HW_Py/HW_5.py:person1 = Human('f', 36, 54, 154, 'brown')
+./HW_Py/HW_5.py:person1.move()
+./HW_Py/HW_5.py:print(person1.get_age())
+./HW_Py/HW_5.py:print(person1.__dict__)
+./HW_Py/HW_5.py:print(person1._Human__age)
+./HW_Py/HW_5.py:person1.set_age(18)
+./HW_Py/HW_5.py:print(person1.__dict__)
+./HW_Py/HW_5.py:person1.weight = 45
+./HW_Py/HW_5.py:person1._Human__age = 21
+./HW_Py/HW_5.py:print(person1.__dict__)
+./HW_Py/HW_5.py:person_mother = Human('f', 36, 51, 154, 'brown')
+./HW_Py/HW_5.py:person_mother.move()
+./HW_Py/HW_5.py:print(person_mother.get_age())
+./HW_Py/HW_5.py:print(person1.__dict__)
+./HW_Py/HW_5.py:print(person_mother._Human__age)
+./HW_Py/HW_5.py:person_mother.set_age(18)
+./HW_Py/HW_5.py:print(person1.__dict__)
+./HW_Py/HW_5.py:person1.weight = 45
+./HW_Py/HW_5.py:person1._Human__age = 21
+./HW_Py/HW_5.py:print(person1.__dict__)
+./venv/Lib/site-packages/pip/_internal/utils/setuptools_build.py:    :param no_user_config: If True, disables personal user configuration.
+Binary file ./venv/Lib/site-packages/pip/_internal/utils/__pycache__/setuptools_build.cpython-311.pyc matches
+./venv/Lib/site-packages/pip/_vendor/distlib/_backport/tarfile.py:# Permission  is  hereby granted,  free  of charge,  to  any person
+./venv/Lib/site-packages/pip/_vendor/distlib/_backport/tarfile.py:# copies  of  the  Software,  and to  permit  persons  to  whom the
+./venv/Lib/site-packages/pip/_vendor/pep517/envbuild.py:    # Permission is hereby granted, free of charge, to any person obtaining
+./venv/Lib/site-packages/pip/_vendor/pep517/envbuild.py:    # permit persons to whom the Software is furnished to do so, subject to
+./venv/Lib/site-packages/pip/_vendor/pyparsing.py:# Permission is hereby granted, free of charge, to any person obtaining
+./venv/Lib/site-packages/pip/_vendor/pyparsing.py:# permit persons to whom the Software is furnished to do so, subject to
+./venv/Lib/site-packages/pip/_vendor/six.py:# Permission is hereby granted, free of charge, to any person obtaining a copy
+./venv/Lib/site-packages/pip/_vendor/six.py:# copies of the Software, and to permit persons to whom the Software is
+./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:    Permission is hereby granted, free of charge, to any person obtaining a
+./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:    and/or sell copies of the Software, and to permit persons to whom the
+./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:    Permission is hereby granted, free of charge, to any person obtaining a
+./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:    and/or sell copies of the Software, and to permit persons to whom the
+./venv/Lib/site-packages/pip/_vendor/urllib3/packages/six.py:# Permission is hereby granted, free of charge, to any person obtaining a copy
+./venv/Lib/site-packages/pip/_vendor/urllib3/packages/six.py:# copies of the Software, and to permit persons to whom the Software is
+./venv/Lib/site-packages/pip-21.3.1.dist-info/LICENSE.txt:Permission is hereby granted, free of charge, to any person obtaining
+./venv/Lib/site-packages/pip-21.3.1.dist-info/LICENSE.txt:permit persons to whom the Software is furnished to do so, subject to
+./venv/Lib/site-packages/pkg_resources/_vendor/pyparsing.py:# Permission is hereby granted, free of charge, to any person obtaining
+./venv/Lib/site-packages/pkg_resources/_vendor/pyparsing.py:# permit persons to whom the Software is furnished to do so, subject to
+./venv/Lib/site-packages/preloaded-1.20230516.122456.dist-info/LICENSE:Permission is hereby granted, free of charge, to any person obtaining a copy
+./venv/Lib/site-packages/preloaded-1.20230516.122456.dist-info/LICENSE:copies of the Software, and to permit persons to whom the Software is
+./venv/Lib/site-packages/setuptools/_vendor/pyparsing.py:# Permission is hereby granted, free of charge, to any person obtaining
+./venv/Lib/site-packages/setuptools/_vendor/pyparsing.py:# permit persons to whom the Software is furnished to do so, subject to
+./venv/Lib/site-packages/setuptools-60.2.0.dist-info/LICENSE:Permission is hereby granted, free of charge, to any person obtaining a copy
+./venv/Lib/site-packages/setuptools-60.2.0.dist-info/LICENSE:sell copies of the Software, and to permit persons to whom the Software is
+./venv/Lib/site-packages/wheel-0.37.1.dist-info/LICENSE.txt:Permission is hereby granted, free of charge, to any person obtaining a
+./venv/Lib/site-packages/wheel-0.37.1.dist-info/LICENSE.txt:and/or sell copies of the Software, and to permit persons to whom the
