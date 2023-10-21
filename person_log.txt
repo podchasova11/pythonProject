@@ -36,8 +36,6 @@ Binary file ./venv/Lib/site-packages/pip/_internal/utils/__pycache__/setuptools_
 ./venv/Lib/site-packages/pip/_vendor/six.py:# copies of the Software, and to permit persons to whom the Software is
 ./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:    Permission is hereby granted, free of charge, to any person obtaining a
 ./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:    and/or sell copies of the Software, and to permit persons to whom the
-./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:    Permission is hereby granted, free of charge, to any person obtaining a
-./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:    and/or sell copies of the Software, and to permit persons to whom the
 ./venv/Lib/site-packages/pip/_vendor/urllib3/packages/six.py:# Permission is hereby granted, free of charge, to any person obtaining a copy
 ./venv/Lib/site-packages/pip/_vendor/urllib3/packages/six.py:# copies of the Software, and to permit persons to whom the Software is
 ./venv/Lib/site-packages/pip-21.3.1.dist-info/LICENSE.txt:Permission is hereby granted, free of charge, to any person obtaining
