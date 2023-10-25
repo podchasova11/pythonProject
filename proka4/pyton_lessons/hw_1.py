@@ -38,7 +38,7 @@ print('The story of {0}, {1}, and {other}.'.format('Bill', 'Manfred',
 # open(filename, mode, encoding=None)
 
 
-f = open('workfile', 'w', encoding="utf-8")
+f = open('../workfile', 'w', encoding="utf-8")
 #Первый аргумент — это строка, содержащая имя файла. Второй аргумент — это еще одна строка,
 # содержащая несколько символов, описывающих способ использования файла.
 # режим может быть 'r'когда файл будет только для чтения, 'w' только для записи
@@ -70,7 +70,7 @@ f = open('workfile', 'w', encoding="utf-8")
 # чем написание эквивалентных tryблоков finally:
 
 
-with open('workfile', encoding="utf-8") as f:
+with open('../workfile', encoding="utf-8") as f:
     read_data = f.read()
 
 # We can check that the file has been automatically closed.
