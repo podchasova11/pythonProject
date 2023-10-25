@@ -36,8 +36,6 @@ Binary file ./venv/Lib/site-packages/pip/_internal/utils/__pycache__/setuptools_
 ./venv/Lib/site-packages/pip/_vendor/six.py:# copies of the Software, and to permit persons to whom the Software is
 ./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:    Permission is hereby granted, free of charge, to any person obtaining a
 ./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/securetransport.py:    and/or sell copies of the Software, and to permit persons to whom the
-./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:    Permission is hereby granted, free of charge, to any person obtaining a
-./venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py:    and/or sell copies of the Software, and to permit persons to whom the
 ./venv/Lib/site-packages/pip/_vendor/urllib3/packages/six.py:# Permission is hereby granted, free of charge, to any person obtaining a copy
 ./venv/Lib/site-packages/pip/_vendor/urllib3/packages/six.py:# copies of the Software, and to permit persons to whom the Software is
 ./venv/Lib/site-packages/pip-21.3.1.dist-info/LICENSE.txt:Permission is hereby granted, free of charge, to any person obtaining
@@ -50,5 +48,4 @@ Binary file ./venv/Lib/site-packages/pip/_internal/utils/__pycache__/setuptools_
 ./venv/Lib/site-packages/setuptools/_vendor/pyparsing.py:# permit persons to whom the Software is furnished to do so, subject to
 ./venv/Lib/site-packages/setuptools-60.2.0.dist-info/LICENSE:Permission is hereby granted, free of charge, to any person obtaining a copy
 ./venv/Lib/site-packages/setuptools-60.2.0.dist-info/LICENSE:sell copies of the Software, and to permit persons to whom the Software is
-./venv/Lib/site-packages/wheel-0.37.1.dist-info/LICENSE.txt:Permission is hereby granted, free of charge, to any person obtaining a
-./venv/Lib/site-packages/wheel-0.37.1.dist-info/LICENSE.txt:and/or sell copies of the Software, and to permit persons to whom the
+./venv/Lib/site-packages/wheel-0.37.1.dist-info/LICENSE.txt:Permission is hereby granted, free of charge, to any person obtaining
