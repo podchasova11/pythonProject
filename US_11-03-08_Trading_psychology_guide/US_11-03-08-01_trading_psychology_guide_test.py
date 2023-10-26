@@ -210,24 +210,24 @@ class TestTradingPsychologyGuideItem:
     #         case "Auth":
     #             test_element.assert_trading_platform_v2(d, menu_link)
 
-
-СТАРЫЕ ТЕСТЫ ОТ 13/09/2023
-
-import allure
-import pytest
-from datetime import datetime
-
-from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
-from pages.Elements.ButtonTradeOnWidgetMostTraded import ButtonTradeOnWidgetMostTraded
-from pages.Elements.ButtonTryDemoMainBanner import MainBannerTryDemo
-from tests.build_dynamic_arg import build_dynamic_arg_v2
-from pages.Menu.menu import MenuSection
-from pages.conditions import Conditions
-from pages.Elements.HeaderButtonLogin import HeaderButtonLogin
-from pages.Elements.HeaderButtonTrade import HeaderButtonTrade
-from pages.Elements.BlockStepTrading import BlockStepTrading
-from pages.Elements.AssertClass import AssertClass
-from src.src import CapitalComPageSrc
+#
+# СТАРЫЕ ТЕСТЫ ОТ 13/09/2023
+#
+# import allure
+# import pytest
+# from datetime import datetime
+#
+# from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
+# from pages.Elements.ButtonTradeOnWidgetMostTraded import ButtonTradeOnWidgetMostTraded
+# from pages.Elements.ButtonTryDemoMainBanner import MainBannerTryDemo
+# from tests.build_dynamic_arg import build_dynamic_arg_v2
+# from pages.Menu.menu import MenuSection
+# from pages.conditions import Conditions
+# from pages.Elements.HeaderButtonLogin import HeaderButtonLogin
+# from pages.Elements.HeaderButtonTrade import HeaderButtonTrade
+# from pages.Elements.BlockStepTrading import BlockStepTrading
+# from pages.Elements.AssertClass import AssertClass
+# from src.src import CapitalComPageSrc
 
 
 @pytest.fixture()
