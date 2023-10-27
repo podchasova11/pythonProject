@@ -1,7 +1,7 @@
 """
 -*- coding: utf-8 -*-
 @Time    : 2023/00/00
-@Author  : 
+@Author  : Podchasova
 """
 import pytest
 import allure
