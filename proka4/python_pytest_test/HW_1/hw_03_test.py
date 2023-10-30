@@ -19,7 +19,6 @@ class TestExample:
         username.send_keys("Mila")
         assert username.get_attribute("value") == "Mila"
 
-
         email = driver.find_element(*self.EMAIL_FIELD)
         email.send_keys("pod@ya.ru")
         assert email.get_attribute("value") == "pod@ya.ru"
