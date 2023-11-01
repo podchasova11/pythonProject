@@ -19,7 +19,7 @@ https://capital.com/survivorship-bias
 
 
 
-    @allure.step("Start test of button [Sell] in content block")
+        @allure.step("Start test of button [Sell] in Banner [Trading Instrument]")
     def test_11_03_01_10_button_sell(
             self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password,
             cur_item_link, prob_run_tc):
