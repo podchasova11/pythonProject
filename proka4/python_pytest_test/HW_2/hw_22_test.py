@@ -1,6 +1,25 @@
-from selenium.webdriver.chrome import webdriver
+import time
+
+from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
+options = Options()
+options.add_argument("--window-size=1920,1080")
+options.add_argument("--disable-blink-features=AutomationControlled")
+options.add_argument("--user-agent=Selenium")
+
+
+service = Service(executable_path=ChromeDriverManager().install())
+wait = WebDriverWait(driver, 5, poll_frequency=1)
+
+time.sleep(3)
+driver.save_screenshot("screen.png")
+
 
 class TestAddSomeBooks:
 
@@ -10,7 +29,7 @@ class TestAddSomeBooks:
     OUTPUT_BLOCK = ("xpath", "//button[@id='login']")
 
     def test_fill_form_with_valid_data(self):
-        driver = webdriver.Chrome()
+        driver = webdriver.Chrome(service=service)
         driver.get("https://demoqa.com/profile")
 
         username = driver.find_element(*self.USERNAME_FIELD)
@@ -32,7 +51,7 @@ class TestAddSomeBooks:
 
 
 
-
+#
 # from selenium import webdriver
 # from webdriver_manager.chrome import ChromeDriverManager
 # from selenium.webdriver.chrome.service import Service
@@ -78,3 +97,4 @@ class TestAddSomeBooks:
 #     def teardown(self):
 #         self.driver.close()
 #         print("Выполняюсь после теста")
+#
