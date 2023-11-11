@@ -1,12 +1,10 @@
 import allure
+import conf
 import pytest
 from datetime import datetime
+import random  # for new method
 
-from pages.Elements.ButtonBuyInContentBlock import BuyButtonContentBlock
-from pages.Elements.ButtonDownloadAppStore import ButtonDownloadAppStore
-from pages.Elements.ButtonExploreWebPlatform import ButtonExploreWebPlatform
-from pages.Elements.ButtonGetItOnGooglePlay import ButtonGetItOnGooglePlay
-from pages.Elements.ButtonSellInContentBlock import SellButtonContentBlock
+from conf import QTY_LINKS
 from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
 from pages.Elements.ButtonTradeOnWidgetMostTraded import ButtonTradeOnWidgetMostTraded
 from pages.Elements.ButtonTryDemoMainBanner import MainBannerTryDemo
@@ -17,22 +15,6 @@ from pages.conditions import Conditions
 from pages.Elements.BlockStepTrading import BlockStepTrading
 from pages.Elements.AssertClass import AssertClass
 from src.src import CapitalComPageSrc
-
-# В этом тесте НИЧЕГО НЕ МЕНЯТЬ,
-#
-# ЭТО РАБОТАЮЩИЙ ТЕСТ от 10/11/23 ПОЧЕМУ ЕГО БУДЕМ МЕНЯТЬ:
-# так как ИЗМЕНИЛИ КОНЦЕПЦИЮ - теперь на главной, РОДИТЕЛЬСКОЙ странице проходим все тесты по чек-листу
-# и в конце на этой же странице собираем Links- ссылки на все статьи,
-# которые будем пробегать и тестировать как ДОЧЕРНИЕ СТРАНИЦЫ уже следующим, дочерним тестом
-# ЭТО ПО УТВЕРЖДЕНИЮ МЕНТОРА ПРОЕКТА УМЕНЬШИТ ВРЕМЯ ПРОХОЖДЕНИЯ ТЕСТА
-
-
-@pytest.fixture()
-def cur_time():
-    return str(datetime.now())
-
-
-count = 1
 
 
 def pytest_generate_tests(metafunc):
@@ -58,6 +40,12 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize("cur_item_link", list_item_link, scope="class")
 
 
+@pytest.fixture()
+def cur_time():
+    """Fixture"""
+    return str(datetime.now())
+
+
 @pytest.mark.us_11_03_01
 class TestTradingStrategiesGuides:
 
@@ -71,10 +59,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Start Trading]
         Language: "", "de", "es", "it". License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_01")
-
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_01 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         link = build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                                    "11.03.01",
+                                    "11.03.01.01",
                                     "Education > Menu item [Trading Strategies Guides]",
                                     "01",
                                     "Testing button [Start Trading] on Main banner")
@@ -112,10 +100,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Try demo] on Main banner
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_02")
-
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_02 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         link = build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                                    "11.03.01",
+                                    "11.03.01.01",
                                     "Education > Menu item [Trading Strategies Guides]",
                                     "02",
                                     "Testing button [Try demo] on Main banner")
@@ -152,9 +140,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Trade] in Most traded block
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_03")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_03 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.01",
+                             "11.03.01.01",
                              "Education > Menu item [Trading Strategies Guides]",
                              "03",
                              "Testing button [Trade] in Most traded block")
@@ -196,9 +185,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Download on the App Store] in Block "Sign up and trade smart today!"
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_06")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_06 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.01", "Education > Menu item [Trading Strategies Guides]",
+                             "11.03.01.01", "Education > Menu item [Trading Strategies Guides]",
                              "06",
                              "Test button [Download on the App Store] in Block \"Sign up and trade smart today!\"")
 
@@ -228,9 +218,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Get it on Google Play] in Block "Sign up and trade smart today!"
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_07")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_07 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.01",
+                             "11.03.01.01",
                              "Education > Menu item [Trading Strategies Guides]",
                              "07",
                              "Test button [Get it on Google Play] in Block \"Sign up and trade smart today!\"")
@@ -262,9 +253,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Explore Web Platform] in Block "Sign up and trade smart today!"
         Language: All. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_08")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_08 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.01",
+                             "11.03.01.01",
                              "Education > Menu item [Trading Strategies Guides]",
                              "08",
                              "Testing button [Explore Web Platform] in Block \"Sign up and trade smart today!\"")
@@ -302,10 +294,10 @@ class TestTradingStrategiesGuides:
         Check: Header -> button [Log In]
         Language: En. License: FCA.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_09")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_09 и атрибутами:")
         print(f"\n{datetime.now()}   {self.__dict__}")
         link = build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                                    "11.03.01",
+                                    "11.03.01.01",
                                     "Education > Menu item [Trading Strategies Guides]",
                                     "09",
                                     "Testing button [1. Create your account] in block [Steps trading]")
@@ -340,9 +332,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Sell] in Banner "Trading Instrument"
         Language: En. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_10")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_10 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.01", "Education > Menu item [Trading Strategies Guides]",
+                             "11.03.01.01", "Education > Menu item [Trading Strategies Guides]",
                              "10", "Testing button [Sell] in Banner [Trading Instrument]")
 
         if cur_country == 'gb':
@@ -377,9 +370,10 @@ class TestTradingStrategiesGuides:
         Check: Button [Buy] in Banner [Trading Instrument]
         Language: En. License: All.
         """
-        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01_11")
+        print(f"\n{datetime.now()}   Работает obj {self} с именем TC_11.03.01.01_11 и атрибутами:")
+        print(f"\n{datetime.now()}   {self.__dict__}")
         build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
-                             "11.03.01", "Education > Menu item [Trading Strategies Guides]",
+                             "11.03.01.01", "Education > Menu item [Trading Strategies Guides]",
                              "11", "Testing button [Buy] in Banner [Trading Instrument]")
 
         if cur_country == 'gb':
