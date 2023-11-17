@@ -41,7 +41,7 @@
 # driver.quit()
 
 
-#
+# ана ф-ция, кот приним список, пусть она возвращает список, но в квадрате
 
 def square(numbers):
     for number in range(len(numbers)):
@@ -50,4 +50,12 @@ def square(numbers):
 num_lists = [2, 3, 6, 5, 4]
 square(num_lists)
 print(num_lists)
+
+def square(nums):
+    for i in range(len(nums)):
+        nums[i] **= 2
+        print(nums)
+lin = [2, 3, 5, 7]
+square(lin)
+print(lin)
 
