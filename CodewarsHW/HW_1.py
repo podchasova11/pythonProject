@@ -11,8 +11,8 @@
 # ['John', 'Smith'], 'Phoenix', 'Arizona'
 # This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
 
-name = ['John', 'Smith']
-print(f"Hello, {name[0]} {name[1]}! Welcome to Phoenix, Arizona!")
+# name = ['John', 'Smith']
+# print(f"Hello, {name[0]} {name[1]}! Welcome to Phoenix, Arizona!")
 
 #  № 2 Jenny has written a function that returns a greeting for a user.
 #  However, she's in love with Johnny, and would like to greet him slightly different.
