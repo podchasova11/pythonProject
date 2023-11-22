@@ -3,7 +3,6 @@ import random
 from pages.base_page import BasePage
 
 
-
 class TestTextBox():
 
     # ('Check TextBox')
