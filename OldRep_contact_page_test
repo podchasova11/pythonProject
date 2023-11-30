@@ -1,13 +1,13 @@
 import allure
-import pytest
-from pip._vendor import requests
+#import pytest
+#from pip._vendor import requests
 from pages.contact_card_page import ContactCardPage
 from pages.contact_page import ContactPage
-import time
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+#import time
+#rom selenium import webdriver
+#from webdriver_manager.chrome import ChromeDriverManager
+#from selenium.webdriver.chrome.service import Service
+#from selenium.webdriver.chrome.options import Options
 
 
 @allure.feature("Contacts")
@@ -25,6 +25,7 @@ class TestContacts:
         self.contact_card_page.enter_last_name("Podchasova")
         self.contact_card_page.enter_title_field("Hgsxg")
         self.contact_card_page.enter_email("mmmmmmila@ya.ru")
+        self.contact_card_page.click_on_submit_button()
         
 
     # @pytest.mark.usefixtures("get_driver")
