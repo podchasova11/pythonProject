@@ -16,3 +16,4 @@ class TextBoxPageLocators:
     CREATED_PERMANENT_ADDRESS = (By.CSS_SELECTOR, '#output #permanentAddress')
     
     
+    
