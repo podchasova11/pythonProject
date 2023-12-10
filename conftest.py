@@ -1,3 +1,5 @@
+
+
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -38,3 +40,4 @@ class BasePage:
 
     def go_to_element(self, param):
         pass
+        
