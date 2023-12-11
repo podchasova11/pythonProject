@@ -1,4 +1,3 @@
-#  HW_1
 #  № 1 Create a method that takes as input a name,
 #  city, and state to welcome a person.
 #  Note that name will be an array consisting of one
