@@ -32,14 +32,3 @@ print(person1.__dict__)
 person1.weight = 45
 person1._Human__age = 21
 print(person1.__dict__)
-
-person_mother = Human('f', 36, 51, 154, 'brown')
-person_mother.move()
-print(person_mother.get_age())
-print(person1.__dict__)
-print(person_mother._Human__age)
-person_mother.set_age(18)
-print(person1.__dict__)
-person1.weight = 45
-person1._Human__age = 21
-print(person1.__dict__)
