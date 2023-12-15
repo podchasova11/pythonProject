@@ -105,5 +105,3 @@ for cls in [B, C, D]:
         print("D")
     except C:
         print("C")
-    except B:
-        print("B")
