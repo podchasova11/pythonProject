@@ -19,3 +19,4 @@ class FormPageLocators:
     SELECT_CITY = (By.CSS_SELECTOR, 'div[id="city"]')
     CITY_INPUT = (By.CSS_SELECTOR, 'input[id="react-select-4-input"]')
     SUBMIT = (By.CSS_SELECTOR, '#submit')
+    
