@@ -39,4 +39,5 @@ class TestContacts:
 
     # def setup(self, get_driver):
     #     self.login_page = LoginPage.PAGE_URL(self, get_driver) # Создаем обьект страницы
+
     # # Вызываем через объект страницы все нужные методы, это и есть шаги теста
