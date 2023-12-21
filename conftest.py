@@ -40,3 +40,4 @@ class BasePage:
 
     def go_to_element(self, param):
         pass
+
