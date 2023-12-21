@@ -7,6 +7,6 @@ def connect_data_base():
     return connection
 cursor = connect_data_base().cursor()
 cursor.execute("SELECT *FROM employees")
-cursor.fetchall()  # обери все записи и запринть
-connect_data_base().close()   #акрывает БД
+cursor.fetchall()  # собери все записи и запринть
+connect_data_base().close()   #закрывает БД
 
