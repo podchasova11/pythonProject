@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
@@ -41,7 +43,15 @@ class BasePage:
         pass
 
     @pytest.fixture()
-    def connect_data_base():
+    def connect_data_base(self):
         connection = sqlite3.connect("test.db")
         print("Мы подключили ДБ")
         return connection
+
+    @pytest.fixture()
+    def generate_data_way_2(request):
+        login = f"autotest_{time.time()}@ya.ru"
+        password = "123"
+        request.cls.login = login
+        request.cls.password = password
+
