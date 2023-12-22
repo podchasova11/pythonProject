@@ -14,5 +14,5 @@ class TestDB:
         cursor = connect_database.cursor()
         cursor.execute("SELECT * FROM employess")
         print(cursor.fetchall())
-        connect_database.close
+        #connect_database.close
 
