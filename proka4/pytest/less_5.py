@@ -40,7 +40,7 @@ response = requests.post(
         "api_key": "special-key"
     }
 )
-print(response.status_code)
+
 assert response.status_code == 200
 print(response.json()["available"])
 # проверим что ["available"] == 163
