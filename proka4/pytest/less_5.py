@@ -6,7 +6,7 @@ import requests
 @pytest.fixture()
 def connect_data_base():
     connection = sqlite3.connect("test.db")
-    print("Мы подключили ДБ")
+    print("Мы подключили БД")
     return connection
 
 cursor = connect_data_base().cursor()
