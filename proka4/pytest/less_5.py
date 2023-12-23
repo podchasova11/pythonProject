@@ -1,6 +1,6 @@
 import sqlite3
 import pytest
- @pytest.fixture()
+@pytest.fixture()
 def connect_data_base():
     connection = sqlite3.connect("test.db")
     print("Мы подключили ДБ")
