@@ -72,7 +72,23 @@ response =requests.get(
         "api_key": "special-key"
     },
     params={
-        "status":"pending"     # можно поставить статус "available"
+        "status": "pending"     # можно поставить статус "available"
     }
 )
 print(response.json())
+
+
+# Авторизация через login/password:
+response =requests.get(
+    url="https://petstore.swagger.io/v2/store/pet/findByStatus",
+    headers={
+        "api_key": "special-key"
+    },
+    params={
+        "status": "available"     # можно поставить статус "available"
+    },
+    auth={
+        "login": "pod@ya.ru",
+        "password": "123"
+    }
+)
