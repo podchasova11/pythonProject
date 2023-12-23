@@ -11,3 +11,11 @@ cursor.execute("SELECT *FROM employees")
 cursor.fetchall()  # собери все записи и запринть
 connect_data_base().close()   #закрывает БД
 
+def connect_database2():
+    connect2 = sqlite3.connect("test2.db")
+    return connect2
+
+cursor2 = connect_database2().cursor()
+cursor2.execute("SELECT * FROM employees")
+print(cursor2.fetchall())
+connect_database2()close()
