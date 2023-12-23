@@ -1,10 +1,10 @@
 import sqlite3
 import pytest
-# @pytest.fixture()
-# def connect_data_base():
-#     connection = sqlite3.connect("test.db")
-#     print("ы подключили ДБ")
-#     return connection
+ @pytest.fixture()
+def connect_data_base():
+    connection = sqlite3.connect("test.db")
+    print("Мы подключили ДБ")
+    return connection
 
 cursor = connect_data_base().cursor()
 cursor.execute("SELECT *FROM employees")
