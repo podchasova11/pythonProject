@@ -34,6 +34,8 @@ import requests
 # print(response.json())
 
 # GET запрос без передачи параметров
+# Мы методом post активировали окружение, теперь
+# будем делать запрос с помощью метода get
 response = requests.post(
     url="https://petstore.swagger.io/v2/store/inventory",
     headers={
