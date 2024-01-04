@@ -6,6 +6,7 @@ def square(numbers):
         numbers[number] **= 2
     print(numbers)
 
-    numbers_list = [1, 2, 3, 4, 5]
-    square(numbers_list)
-    print(numbers_list)
+
+numbers_list = [1, 2, 3, 4, 5]
+square(numbers_list)
+print(numbers_list)
