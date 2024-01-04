@@ -18,3 +18,4 @@ class BasePage:
 
     def element_is_present(self, locator, timeout=5):   # 'Find a present element'
         return wait(self.driver, timeout).until(EC.presence_of_element_located(locator))
+        
