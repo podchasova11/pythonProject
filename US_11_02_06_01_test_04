@@ -26,6 +26,7 @@
 
         test_element = BlockStepTrading(d, cur_item_link, bid)
         test_element.arrange_(d, cur_item_link, bid)
+        test_element.full_test_with_tpi(d, cur_language, cur_country, cur_role, cur_item_link)
 
         if not test_element.element_click():
             logger.warning(f"Testing element is not clicked")
