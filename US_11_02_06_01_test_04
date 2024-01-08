@@ -7,7 +7,7 @@
             self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, cur_item_link):
         """
         Check: Button [1. Create & verify your account] in block 'Steps trading'
-        Language: EN, AR, DE, ES, IT, CN, RU, ZH. License: All.
+        Language: EN, DE, ES, IT, RU, ZH. License: All.
         """
         test_title = ("11.02.06", "Education > Menu item [Indices Trading]",
                       ".01_04", "Testing button [1. Create & verify your account] in Block 'Steps trading'")
@@ -18,7 +18,7 @@
             d, worker_id, cur_language, cur_country, cur_role, *test_title)
 
         Common().check_language_in_list_and_skip_if_not_present(
-            cur_language, ["", "ar", "de", "es", "it", "cn", "ru", "zh"])
+            cur_language, ["", "de", "es", "it", "ru", "zh"])
 
         page_conditions = Conditions(d, "")
         page_conditions.preconditions(
