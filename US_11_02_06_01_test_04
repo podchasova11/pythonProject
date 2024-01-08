@@ -26,7 +26,7 @@
         test_element.full_test_with_tpi(d, cur_language, cur_country, cur_role, cur_item_link)
 
 
-       # test_element = AssertClass(d, cur_item_link, bid)
+
         # match cur_role:
          #   case "NoReg" | "NoAuth":
          #       test_element.assert_signup(d, cur_language, cur_item_link)
