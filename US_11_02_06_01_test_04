@@ -69,7 +69,6 @@
 
 
 
-
 # main 11_02_06_00_test_04
 
     @allure.step("Start test of button [1. Create & verify your account] in Block 'Steps trading'")
