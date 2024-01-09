@@ -5,9 +5,9 @@ from pages.contact_card_page import ContactCardPage
 from pages.contact_page import ContactPage
 #import time
 #rom selenium import webdriver
-#from webdriver_manager.chrome import ChromeDriverManager
-#from selenium.webdriver.chrome.service import Service
-#from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 
 
 @allure.feature("Contacts")
