@@ -20,3 +20,15 @@ https://capital.com/fear-and-greed-index
 # response = requests.get("https://evilinsult.com/generate_insult.php?lang=en&type=json")
 
 # print(response.json()["insult"])
+
+#Теперь напишем Dockerfile, будем создавать образ на основе Python Alpine
+#Dockerfile
+FROM python:3.12.1-alpine3.18 # Базовый образ
+
+WORKDIR /usr/workspace # Рабочая директория
+
+COPY ./ /usr/workspace # Копируем все файлы в образ
+
+RUN pip3 install requests # Устанавливаем requests
+
+CMD ["python3", "insult.py"] # Команда запуска программы
