@@ -15,8 +15,8 @@ https://capital.com/emotions-in-trading
 https://capital.com/endowment-effect
 https://capital.com/fear-and-greed-index
 
-import requests
+# import requests
 
-response = requests.get("https://evilinsult.com/generate_insult.php?lang=en&type=json")
+# response = requests.get("https://evilinsult.com/generate_insult.php?lang=en&type=json")
 
-print(response.json()["insult"])
+# print(response.json()["insult"])
