@@ -55,3 +55,36 @@
         test_element = AssertClass(d, cur_item_link, bid)
         test_element.assert_google_play(d, cur_item_link)
 
+    @allure.step("Start test_11.03.01.01_08 of button [Explore Web Platform] in Block 'Sign up and trade smart today!'")
+    @pytest.mark.test_08
+    def test_08_button_explore_web_platform(
+            self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, cur_item_link):
+        """
+        Check: Button [Explore Web Platform] in Block "Sign up and trade smart today!"
+        Language: All. License: All.
+        """
+        bid = build_dynamic_arg_v4(
+            d, worker_id, cur_language, cur_country, cur_role,
+            "11.03.01", "Education > Menu item [Trading Strategies Guides]",
+            ".01_08", "Testing button [Explore Web Platform] in Block \"Sign up and trade smart today!\"")
+
+        Common().check_language_in_list_and_skip_if_not_present(cur_language, ["", "de", "es", "it", "ru", "zh"])
+
+        page_conditions = Conditions(d, "")
+        page_conditions.preconditions(
+            d, CapitalComPageSrc.URL, "", cur_language, cur_country, cur_role, cur_login, cur_password)
+
+        test_element = ButtonExploreWebPlatform(d, cur_item_link)
+        test_element.arrange_(cur_item_link)
+        if not test_element.element_click():
+            pytest.fail("Testing element is not clicked")
+
+        test_element = AssertClass(d, cur_item_link, bid)
+        match cur_role:
+            case "NoReg":
+                test_element.assert_signup_form_on_the_trading_platform(d)
+            case "NoAuth":
+                test_element.assert_login_form_on_the_trading_platform(d)
+            case "Auth":
+                test_element.assert_trading_platform_v4(d, cur_item_link)
+
