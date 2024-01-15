@@ -59,3 +59,5 @@ print(f'Тысячи -{num1}')
 print(f'Сотни -{num2}')
 print(f'Десятки -{num3}')
 print(f'Единицы -{num4}')
+
+
