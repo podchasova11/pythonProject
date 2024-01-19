@@ -13,8 +13,6 @@ https://capital.com/hindsight-bias
 https://capital.com/recency-bias
 https://capital.com/emotions-in-trading
 
-
-
 ----------------------------------------------------------------------------------------
 import requests
 response = requests.get("https://evilinsult.com/generate_insult.php?lang=en&type=json")
