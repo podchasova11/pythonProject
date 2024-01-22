@@ -4,7 +4,6 @@ import pytest
 from datetime import datetime
 import random  # for new method
 
-
 from conf import QTY_LINKS
 from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
 from pages.Elements.ButtonTradeOnWidgetMostTraded import ButtonTradeOnWidgetMostTraded
