@@ -6,6 +6,7 @@ class Human:
         self.height = height
         self.eyes_color = eyes_color
         
+        
 
     def move(self):
         print('I can walk and run')
