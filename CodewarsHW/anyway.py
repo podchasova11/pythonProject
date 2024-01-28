@@ -28,6 +28,7 @@ print(100 / 2 ** 2)
 
 # Write a function that takes an array of words and smashes them together
 # into a sentence and returns the sentence.
+
 def smash(words):
     string = ""
     for element in words:
