@@ -26,8 +26,6 @@ print(f'текущее время: {hour:0>2}:{num}{num_2}:{sec_1:0>2}')
 print(100 / 2 ** 2)
 
 
-
-
 # Write a function that takes an array of words and smashes them together
 # into a sentence and returns the sentence.
 def smash(words):
