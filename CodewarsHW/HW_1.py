@@ -14,7 +14,6 @@
 # print(f"Hello, {name[0]} {name[1]}! Welcome to Phoenix, Arizona!")
 
 
-
 import codewars_test as test
 from solution import say_hello
 
