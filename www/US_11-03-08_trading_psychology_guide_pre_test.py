@@ -91,7 +91,6 @@ class TestTradingPsychologyGuidePretest:
 
 
 
-
 import allure
 import pytest
 from datetime import datetime
