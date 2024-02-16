@@ -11,6 +11,7 @@ print('*   *')
 print('*   *')
 print('*****')
 
+
 arr = [1, 2, 3, 4, 5, 6]
 # print(mean(arr))
 print((sum(arr) / len(arr)))
