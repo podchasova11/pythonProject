@@ -49,6 +49,7 @@ class TestTradingStrategiesGuides:
         test_element = MainBannerStartTrading(d, cur_page_url)
         test_element.full_test_with_tpi(d, cur_language, cur_country, cur_role, cur_page_url)
 
+
     @allure.step("Start test_11.03.01_02 of button [Try demo] on Main banner")
     @pytest.mark.test_02
     def test_02_main_banner_try_demo_button(
