@@ -11,7 +11,6 @@ from pages.Menu.menu import MenuSection
 from pages.conditions import Conditions
 from pages.Elements.BlockStepTrading import BlockStepTrading
 from src.src import CapitalComPageSrc
-
 count = 1
 
 @pytest.fixture()
