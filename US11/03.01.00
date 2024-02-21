@@ -1,5 +1,6 @@
 import allure
 import pytest
+
 from datetime import datetime
 from pages.Education.Trading_strategies_guide_locators import TradingStrategiesContentList
 from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
