@@ -1,0 +1,4 @@
+class MenuUS01Markets:
+    SUB_MENU_EN_MARKETS = (By.CSS_SELECTOR, '[data-type="nav_id8"]')
+    SUB_MENU_EN_GB_MARKETS = (By.CSS_SELECTOR, '[data-type="nav_id693"]')  # Новая верстка, FCA
+    SUB_MENU_AR_MARKETS = (By.CSS_SELECTOR, '[data-type="nav_id8"]')
