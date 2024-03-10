@@ -2,7 +2,7 @@ import allure
 import conf
 import pytest
 from datetime import datetime
-import random  # for new method
+import random  
 
 from conf import QTY_LINKS
 from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
