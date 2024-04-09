@@ -9,6 +9,7 @@ for let in alpf:
     print(let)
 
 
+
 def pattern(char1=2, char2=2):
 
     return (char1 + char2) * 2
