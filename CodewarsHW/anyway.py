@@ -1,4 +1,5 @@
 import datetime
+
 print("Hi!")
 print('It\'s so funny')
 print(100)
