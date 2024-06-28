@@ -4,7 +4,6 @@
 #  or more values that should be joined together with
 #  one space between each, and the length of the name
 #  array in test cases will vary.
-#
 # Example:
 #
 # ['John', 'Smith'], 'Phoenix', 'Arizona'
