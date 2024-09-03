@@ -7,7 +7,7 @@ class BasePage:
         self.driver = driver
         self.url = url
 
-    def open(self):    # 'Open a browser'
+    def open(self):
         self.driver.get(self.url)
 
     def element_is_visible(self, locator, timeout=5):
