@@ -9,7 +9,10 @@ Class BasePage():
 def current_page_is(self,link):
     return link == self.driver.current_url
 
+def current_page_is(self,link):
+    return link == salf.driver.current_url
 
+# self - ссылка на текущий экземпляр класса
 
 _______________________
 
