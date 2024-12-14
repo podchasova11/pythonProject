@@ -8,6 +8,7 @@ import pytest
 import random  # for new method
 from datetime import datetime
 
+
 import conf
 from pages.Education.Trading_psychology_guide_locators import TradingPsychologyContentList
 from pages.Menu.menu import MenuSection
