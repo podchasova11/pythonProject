@@ -3,6 +3,7 @@ class MenuUS01Markets:
     SUB_MENU_EN_GB_MARKETS = (By.CSS_SELECTOR, '[data-type="nav_id693"]')  # Новая верстка, FCA
     SUB_MENU_AR_MARKETS = (By.CSS_SELECTOR, '[data-type="nav_id8"]')
 
+
     @allure.step(f"{datetime.now()}.   Click 'Indices' menu item.")
     def sub_menu_indices_move_focus_click(self, d, test_language):
         sub_menu = list()
