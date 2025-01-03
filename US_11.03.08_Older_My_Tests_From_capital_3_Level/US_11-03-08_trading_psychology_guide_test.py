@@ -13,6 +13,7 @@ from pages.conditions import Conditions
 from src.src import CapitalComPageSrc
 
 
+
 @pytest.fixture()
 def cur_time():
     """Fixture"""
