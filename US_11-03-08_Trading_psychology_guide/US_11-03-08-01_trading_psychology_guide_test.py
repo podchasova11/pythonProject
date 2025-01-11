@@ -1,5 +1,4 @@
-
-# import allure
+import allure
 # from datetime import datetime
 #
 # from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
