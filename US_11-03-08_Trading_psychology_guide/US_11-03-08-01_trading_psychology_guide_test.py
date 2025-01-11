@@ -1,5 +1,4 @@
 # from datetime import datetime
-#
 # from pages.Elements.ButtonStartTradingMainBanner import MainBannerStartTrading
 # from pages.Elements.ButtonTradeOnWidgetMostTraded import ButtonTradeOnWidgetMostTraded
 # from pages.Elements.ButtonTryDemoMainBanner import MainBannerTryDemo
