@@ -78,3 +78,40 @@ class TestTradingPsychologyGuidePretest:
             print(f"{datetime.now()}   The test coverage = 0 %")
 
         count -= 1
+        
+        ###
+        import conf
+from pages.Education.Trading_psychology_guide_locators import TradingPsychologyContentList
+from pages.Menu.menu import MenuSection
+from tests.build_dynamic_arg import build_dynamic_arg_v2
+from pages.conditions import Conditions
+from src.src import CapitalComPageSrc
+
+count = 1
+
+
+#  @pytest.mark.us_11_03_08_pre
+class TestTradingPsychologyGuidePretest:
+    page_conditions = None
+
+    @allure.step("Start test_11.03.08_00 pretest")
+    def test_trading_psychology_guide_pretest(
+            self, worker_id, d, cur_language, cur_country, cur_role, cur_login, cur_password, prob_run_tc):
+        global count
+
+        print(f"\n\n{datetime.now()}   Работает obj {self} с именем TC_11.03.08_00")
+
+        build_dynamic_arg_v2(self, d, worker_id, cur_language, cur_country, cur_role, prob_run_tc,
+                             "11.03.08", "Education > Menu item [Trading Psychology Guide]",
+                             "00", "Pretest")
+
+        if count == 0:
+            pytest.skip("Так надо")
+
+        if cur_language not in [""]:
+            pytest.skip(f"Test-case not for '{cur_language}' language")
+
+        page_conditions = Conditions(d, "")
+        link = page_conditions.preconditions(
+            d, CapitalComPageSrc.URL
+        
