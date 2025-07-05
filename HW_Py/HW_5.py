@@ -79,6 +79,40 @@ def test_delete_user(x_task_id):
     # Step 6: Verify that user information doesn't return
     response = requests.get(f"{BASE_URL}/users/{user_uuid}", headers=headers(x_task_id))
     assert response.status_code == 404
+    
+    ####
+        self.weight = weight
+        self.height = height
+        self.eyes_color = eyes_color
+        
+        
+
+    def move(self):
+        print('I can walk and run')
+
+    def get_age(self):
+        print(self.__age)
+
+    def set_age(self, new_age):
+        self.__age = new_age
+
+    def super_mother(self):
+        print('I can feed my family')
+
+    def super_father(self):
+        print('I can help my family')
+
+
+person1 = Human('f', 36, 54, 154, 'brown')
+person1.move()
+print(person1.get_age())
+print(person1.__dict__)
+print(person1._Human__age)
+person1.set_age(18)
+print(person1.__dict__)
+person1.weight = 45
+person1._Human__age = 21
+print(person1.__dict__)
 
 
 
